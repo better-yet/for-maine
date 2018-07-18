@@ -1,0 +1,56 @@
+@import '~bootstrap/scss/bootstrap';
+
+$green-light: #e6f2e6;
+$green-medium: #188e5c;
+$green-dark: #01473c;
+
+section {
+	padding: 1.5em;
+	h1 {
+		font-family: $font-family-sans-serif;
+		font-weight: 600;
+	}
+	.lead {
+		font-weight: inherit;
+		font-size: 1.75rem;
+	}
+	&.hero {
+		background-color: $green-dark;
+		color: white;
+		.carousel {
+			.item {
+				font-size: 50px;
+			}
+		}
+	}
+	&.facts {
+		background-color: $gray-200;
+		font-family: $font-family-monospace;
+		h1 { color: $green-dark; }
+		h2 {
+			font-size: inherit;
+			text-decoration: underline;
+		}
+	}
+	&.why {
+		background-color: $green-medium;
+		color: white;
+		font-size: 21px;
+	}
+	&.about {
+		color: $green-dark;
+		font-size: 17px;
+	}
+	&.who {
+		background-color: $green-light;
+		color: $green-dark;
+		ul {
+			list-style-type: none;
+			padding: 0;
+			li {
+				margin-bottom: 10px;
+				strong { display: block; }
+			}
+		}
+	}
+}
