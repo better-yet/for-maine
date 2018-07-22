@@ -1,3 +1,7 @@
+$font-family-sans-serif: 'News Cycle', sans-serif;
+$font-family-monospace: 'Roboto Mono', monospace;
+
+@import '~flickity/dist/flickity.css';
 @import '~bootstrap/scss/bootstrap';
 
 $green-light: #e6f2e6;
@@ -8,43 +12,51 @@ section {
 	.inner {
 		padding: 1.5em;
 	}
-	h1 {
-		font-family: $font-family-sans-serif;
-		font-weight: 600;
-	}
 	.lead {
 		font-weight: inherit;
 		font-size: 1.75rem;
 	}
+	h1 {
+		font-family: $font-family-sans-serif; //to override monospace sections
+		font-weight: bold;
+	}
+	h2 {
+		font-size: inherit;
+		text-decoration: underline;
+	}
+	h3 {
+		font-size: inherit;
+		text-transform: uppercase;
+		font-weight: bold;
+	}	
 	&.header {
-		h1 {
-			background-image: url(/img/logo.svg);
-			background-repeat: no-repeat;
-			background-size: contain;
-			text-indent: 100%;
-			white-space: nowrap;
-			overflow: hidden;
-			width: 350px;
-			height: 125px;
+		a.logo {
+			svg {
+				width: auto;
+				height: 125px;
+			}
 		}
-		a.facebook {
-			background-image: url(/img/facebook.svg);
-			background-size: contain;
-			display: block;
-			float: left; 
-			margin-right: 10px;
-			width: 32px;
-			height: 32px;
-			text-indent: 100%;
-			overflow: hidden;
-			white-space: nowrap;
+		div.facebook {
+			max-width: 52px;
+			a.facebook {
+				svg {
+					width: auto;
+					height: 32px;
+					path {
+						fill: $green-medium;
+					}
+				}
+				&:hover svg path { fill: $green-dark; }
+			}
 		}
 		input {
 			background-color: $green-light;
 			border: 0;
 			box-shadow: none;
-			padding: .25rem;
+			height: 32px;
+			padding: .25rem 1rem;
 			text-align: right;
+			width: 100%;
 		}
 		strong {
 			display: block;
@@ -74,7 +86,8 @@ section {
 			}
 			nav {
 				text-align: center;
-				font-size: 19px;
+				font-family: $font-family-monospace;
+				font-size: 20px;
 				a { 
 					color: white; 
 					padding: .25rem 1rem;
@@ -84,8 +97,18 @@ section {
 				}
 			}
 			.carousel {
+				height: 500px;
+				opacity: 0;
+				.flickity-slider {
+					display: flex;
+					align-items: center;
+				}
 				.item {
 					font-size: 50px;
+					width: 100%;
+				}
+				&.flickity-enabled {
+					opacity: 1;
 				}
 			}
 		}
@@ -94,9 +117,13 @@ section {
 		background-color: $gray-200;
 		font-family: $font-family-monospace;
 		h1 { color: $green-dark; }
-		h2 {
-			font-size: inherit;
-			text-decoration: underline;
+		.center {
+			background-image: url(/img/maine.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			text-align: center;
+			vertical-align: middle;
 		}
 	}
 	&.why {
@@ -111,6 +138,9 @@ section {
 	&.who {
 		background-color: $green-light;
 		color: $green-dark;
+		p.lead {
+			margin-bottom: 2rem;
+		}
 		ul {
 			list-style-type: none;
 			padding: 0;

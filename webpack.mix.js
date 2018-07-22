@@ -11,5 +11,12 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/script.js', 'public')
-   .sass('src/style.scss', 'public');
+mix.scripts([
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/flickity/dist/flickity.pkgd.js',
+		'src/script.js'
+	], 'public/script.js')
+	.sass('src/style.scss', 'public')
+	.options({
+		processCssUrls: false
+	});
