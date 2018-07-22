@@ -1,0 +1,123 @@
+@import '~bootstrap/scss/bootstrap';
+
+$green-light: #e6f2e6;
+$green-medium: #188e5c;
+$green-dark: #01473c;
+
+section {
+	.inner {
+		padding: 1.5em;
+	}
+	h1 {
+		font-family: $font-family-sans-serif;
+		font-weight: 600;
+	}
+	.lead {
+		font-weight: inherit;
+		font-size: 1.75rem;
+	}
+	&.header {
+		h1 {
+			background-image: url(/img/logo.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			width: 350px;
+			height: 125px;
+		}
+		a.facebook {
+			background-image: url(/img/facebook.svg);
+			background-size: contain;
+			display: block;
+			float: left; 
+			margin-right: 10px;
+			width: 32px;
+			height: 32px;
+			text-indent: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		input {
+			background-color: $green-light;
+			border: 0;
+			box-shadow: none;
+			padding: .25rem;
+			text-align: right;
+		}
+		strong {
+			display: block;
+			color: $green-dark;
+			& + strong {
+				color: $green-medium;
+			}
+		}
+	}
+	&.hero {
+		.inner {
+			overflow: hidden;
+			color: white;
+			position: relative;
+			video {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				z-index: -100;
+				transform: translateX(-50%) translateY(-50%);
+				background: url(/video/forest.jpg);
+				background-size: cover;
+			}
+			nav {
+				text-align: center;
+				font-size: 19px;
+				a { 
+					color: white; 
+					padding: .25rem 1rem;
+					& + a {
+						border-left: 1px solid white;
+					}
+				}
+			}
+			.carousel {
+				.item {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+	&.facts {
+		background-color: $gray-200;
+		font-family: $font-family-monospace;
+		h1 { color: $green-dark; }
+		h2 {
+			font-size: inherit;
+			text-decoration: underline;
+		}
+	}
+	&.why {
+		background-color: $green-medium;
+		color: white;
+		font-size: 21px;
+	}
+	&.about {
+		color: $green-dark;
+		font-size: 17px;
+	}
+	&.who {
+		background-color: $green-light;
+		color: $green-dark;
+		ul {
+			list-style-type: none;
+			padding: 0;
+			li {
+				margin-bottom: 10px;
+				strong { display: block; }
+			}
+		}
+	}
+}
