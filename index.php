@@ -81,7 +81,8 @@ get_header();
 					</div>
 					<div class="col">
 						<form id="mailchimp">
-							<input type="email" name="EMAIL" placeholder="Subscribe!" value="josh@joshreisner.com">
+							<?php wp_nonce_field('formaine', 'mailchimp')?>
+							<input type="email" name="email" placeholder="Subscribe!">
 						</form>
 					</div>
 				</div>
@@ -110,26 +111,14 @@ get_header();
 						--><a href="#about">About FOR/Maine</a>
 					</nav>
 					<div class="carousel">
+						<?php 
+						while (have_rows('carousel', 'options')) {
+							the_row();
+							?>
 						<div class="item d-flex align-items-center">
-							<div>
-								Maine is 89% covered by one of the most advanced, productive, and sustainable resources imaginable: the forest.
-							</div>
+							<div><?php the_sub_field('headline')?></div>
 						</div>
-						<div class="item d-flex align-items-center">
-							<div>
-								Maine’s forests grow naturally, sequestering carbon, and providing habitat for wildlife, and recreation residents and tourists. 
-							</div>
-						</div>
-						<div class="item d-flex align-items-center">
-							<div>
-								Forests provide a critical anchor for the state’s economy. Forest outputs can be made into a staggering array of advanced and eco-friendly products.
-							</div>
-						</div>
-						<div class="item d-flex align-items-center">
-							<div>
-								Global markets are changing, and Maine is adapting and diversifying for new opportunities. We are building the next generation of the great Maine forest economy.
-							</div>
-						</div>
+						<?php }?>
 					</div>
 				</div>
 			</div>
