@@ -13,9 +13,9 @@
     "devDependencies": {
         "bootstrap": "^4.0.0",
         "cross-env": "^5.1",
-        "flickity": "^2.1.2",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
-        "popper.js": "^1.12"
+        "popper.js": "^1.12",
+        "slick-carousel": "^1.8.1"
     }
 }

@@ -8,8 +8,8 @@
 		<title>FOR/Maine</title>
 	</head>
 	<body>
-		<div class="container">
-			<section class="header mt-4">
+		<section class="header mt-4">
+			<div class="container">
 				<div class="row">
 					<div class="col-sm-8">
 						<a href="/" class="logo" title="FOR/Maine Logo">
@@ -86,7 +86,9 @@
 								</a>
 							</div>
 							<div class="col">
-								<input type="email" placeholder="Subscribe!">
+								<form id="mailchimp">
+									<input type="email" name="EMAIL" placeholder="Subscribe!" value="josh@joshreisner.com">
+								</form>
 							</div>
 						</div>
 						<div class="row flex-grow-1 align-items-end">
@@ -98,15 +100,17 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="hero mt-2">
+			</div>
+		</section>
+		<section class="hero mt-2">
+			<video playsinline autoplay muted loop poster="/video/forest.jpg">
+				<source src="/video/forest.webm" type="video/webm">
+				<source src="/video/forest.mp4" type="video/mp4">
+			</video>
+			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="inner">
-							<video playsinline autoplay muted loop poster="/video/forest.jpg">
-								<source src="/video/forest.webm" type="video/webm">
-								<source src="/video/forest.mp4" type="video/mp4">
-							</video>
 							<nav class="d-none d-sm-block">
 								<a href="#facts">Maine Forests</a><!--
 								--><a href="#about">About FOR/Maine</a>
@@ -136,8 +140,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="facts">
+			</div>
+		</section>
+		<section class="facts">
+			<div class="container">
 				<a name="facts"></a>
 				<div class="inner">
 					<h1>MAINE FOREST FACTS</h1>
@@ -180,8 +186,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="why">
+			</div>
+		</section>
+		<section class="why">
+			<div class="container">
 				<div class="inner">
 					<h1>WHY INVEST IN MAINE FORESTS?</h1>
 					<p>Maine forests have the attributes businesses and investors seek in renewable forest endeavors:</p>
@@ -218,8 +226,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="about">
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
 				<a name="about"></a>
 				<div class="inner">
 					<h1>ABOUT FOR/MAINE</h1>
@@ -237,8 +247,10 @@
 					</div>
 					<img src="/img/chart.svg" class="d-none d-sm-block w-100 mt-4" title="Chart">
 				</div>
-			</section>
-			<section class="who">
+			</div>
+		</section>
+		<section class="who">
+			<div class="container">
 				<div class="inner">
 					<h1>WHO IS FOR/MAINE?</h1>
 					<p class="lead">Forest Opportunity Roadmap / Maine (FOR/Maine) is a unique cross-sector collaboration between industry, communities, government, education, and non-profits, which have come together to realize the next generation of Maine’s great forest economy. The coalition was created with support from the U.S. Economic Development Agency and U.S. Dept. of Agriculture.</p>
@@ -267,8 +279,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 		<script src="/script.js"></script>
 	</body>
 </html>
