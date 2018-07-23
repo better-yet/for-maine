@@ -81,7 +81,7 @@ section {
 			height: auto;
 			z-index: -100;
 			transform: translateX(-50%) translateY(-50%);
-			background: url(/video/forest.jpg);
+			background: url(../video/forest.jpg);
 			background-size: cover;
 		}
 		.inner {
@@ -139,7 +139,7 @@ section {
 			li + li { margin-top: 40px; }
 		}
 		.center {
-			background-image: url(/img/maine.png);
+			background-image: url(../img/maine.png);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;

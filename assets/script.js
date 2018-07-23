@@ -1,4 +1,4 @@
-$(function(){
+jQuery(function($){
 	$('.carousel').slick({
 		arrows: false,
 		autoplay: true,

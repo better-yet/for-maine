@@ -12,11 +12,10 @@ let mix = require('laravel-mix');
  */
 
 mix.scripts([
-		'node_modules/jquery/dist/jquery.js',
 		'node_modules/slick-carousel/slick/slick.js',
-		'src/script.js'
-	], 'public/script.js')
-	.sass('src/style.scss', 'public')
+		'assets/script.js'
+	], 'assets/compiled/script.js')
+	.sass('assets/style.scss', 'assets/compiled')
 	.options({
 		processCssUrls: false
 	});
