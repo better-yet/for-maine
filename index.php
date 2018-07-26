@@ -127,7 +127,7 @@ get_header();
 </section>
 <section class="facts">
 	<div class="container">
-		<a name="facts"></a>
+		<a name="facts" id="facts"></a>
 		<div class="inner">
 			<h1>MAINE FOREST FACTS</h1>
 			<div class="row">
@@ -213,7 +213,7 @@ get_header();
 </section>
 <section class="about">
 	<div class="container">
-		<a name="about"></a>
+		<a name="about" id="about"></a>
 		<div class="inner">
 			<h1>ABOUT FOR/MAINE</h1>
 			<div class="row">
