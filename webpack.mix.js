@@ -12,8 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.scripts([
-		'node_modules/slick-carousel/slick/slick.js',
-		'assets/script.js'
+		'./node_modules/slick-carousel/slick/slick.js',
+		'./assets/script.js'
 	], 'assets/compiled/script.js')
 	.sass('assets/style.scss', 'assets/compiled')
 	.options({

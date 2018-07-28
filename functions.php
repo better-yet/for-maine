@@ -11,6 +11,9 @@ if (function_exists('acf_add_options_page')) {
 	acf_add_options_page();	
 }
 
+//disable toolbar
+add_filter('show_admin_bar', '__return_false');
+
 //send form submission to mailchimp
 add_action('wp_ajax_mailchimp', 'formaine_mailchimp');
 add_action('wp_ajax_nopriv_mailchimp', 'formaine_mailchimp');
