@@ -31,8 +31,8 @@ jQuery(function($){
 		} else {
 			$nav.removeClass('fixed-top');
 		}
-		var opacity = Math.min((scroll - start) / fadeDistance, 1);
-		var color = 255 - (opacity * 255);
+		var opacity = Math.max(Math.min((scroll - start) / fadeDistance, 1), 0);
+		var color = Math.round(255 - (opacity * 255));
 		$nav.css({
 			backgroundColor: 'rgba(255, 255, 255, ' + opacity * backgroundMax + ')',
 			borderColor: 'rgb(' + color + ',' + color + ',' + color + ')',
