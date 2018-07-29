@@ -14,3 +14,14 @@
 		<?php wp_head()?>
 	</head>
 	<body <?php body_class()?>>
+		<nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
+			<div class="container">
+				<a href="/" class="logo scroll" title="FOR/Maine Logo">
+					<img src="<?php echo get_stylesheet_directory_uri()?>/assets/img/logo-small.svg" width="129" height="84.16">
+				</a>
+				<div class="centered-nav">
+					<a href="#facts" class="scroll">Maine Forests</a><!--
+					--><a href="#about" class="scroll">About FOR/Maine</a>
+				</div>
+			</div>
+		</nav>
