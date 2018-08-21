@@ -208,6 +208,10 @@ section {
 	&.who {
 		background-color: $green-light;
 		color: $green-dark;
+		a {
+			color: $green-dark; 
+			text-decoration: underline;
+		}
 		p.lead {
 			margin-bottom: 2rem;
 		}

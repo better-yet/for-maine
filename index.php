@@ -96,9 +96,9 @@ get_header();
 	</div>
 </section>
 <section class="hero mt-2">
-	<video playsinline autoplay muted loop poster="<?php echo get_stylesheet_directory_uri()?>/assets/video/forest.jpg">
-		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/forest.webm" type="video/webm">
-		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/forest.mp4" type="video/mp4">
+	<video playsinline autoplay muted loop poster="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.jpg">
+		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.webm" type="video/webm">
+		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.mp4" type="video/mp4">
 	</video>
 	<div class="container">
 		<div class="row">
@@ -157,7 +157,7 @@ get_header();
 						</li>
 						<li>
 							<h2>Wildlife</h2>
-							Home for wildlife, including moose, white-trailed deer and black bear, bobcats and the endangered Canada lynx, hawks, owls and bald eagles, wild turkeys, and the largest population of native brook trout in the lower 48 states
+							Home for wildlife, including moose, white-tailed deer and black bear, bobcats and the endangered Canada lynx, hawks, owls and bald eagles, wild turkeys, and the largest population of native brook trout in the lower 48 states
 						</li>
 					</ul>
 				</div>
@@ -256,8 +256,15 @@ get_header();
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-6 offset-md-3 my-4 pb-2 text-center">
+				<p>FOR/Maine 2018. For more information, contact <a href="mailto:SCurran@mdf.org">SCurran@mdf.org</a></p>
+				<p class="my-0">Site design & development by <a href="https://better-yet.com/" target="_blank">Better Yet Studio</a></p>
+			</div>
+		</div>
 	</div>
 </section>
+
 
 <?php
 get_footer();
