@@ -6,7 +6,7 @@ jQuery(function($){
 		var href = $(this).attr('href');
 		var isAnchor = (href.substr(0, 1) == '#');
 		var scrollTop = isAnchor ? $(href).offset().top - $('nav').outerHeight() : 0;
-		console.log(scrollTop);
+		//console.log(scrollTop);
 		$('html, body').animate({
 			scrollTop: scrollTop
 		}, 500/* , function(){
@@ -55,6 +55,7 @@ jQuery(function($){
 	$form.submit(function() {
 		$.post('/wp-admin/admin-ajax.php?action=mailchimp', $form.serialize(), function(data) {
 			alert(data);
+			$form.find('input[name="email"]').val('');
 		});
 		return false;
 	});

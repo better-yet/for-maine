@@ -6,7 +6,7 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="407.49px" height="145.333px" viewBox="0 0 407.49 145.333" enable-background="new 0 0 407.49 145.333"
 					 xml:space="preserve">
 					<g id="Layer_1">
@@ -119,6 +119,38 @@ get_header();
 		</div>
 	</div>
 </section>
+<?php if ($report = get_field('report', 'options')) {?>
+<section class="report">
+	<div class="container">
+		<div class="inner">
+			<h1 class=""><?php the_field('title', 'options')?></h1>
+			<div class="row">
+				<div class="col-sm-8 my-2">
+					<p class="lead"><?php echo nl2br(get_field('content', 'options'))?></p>
+				</div>
+				<div class="col-sm-4 my-2">
+					<h3>Download the report</h3>
+					<ul>
+						<li><a href="<?php echo $report['url']?>"><?php echo $report['title']?></a></li>
+					</ul>
+
+					<?php if (have_rows('appendices', 'options')) {?>
+					<h3>Appendices</h3>
+					<ul>
+						<?php while (have_rows('appendices', 'options')) {
+							the_row();
+							$appendix = get_sub_field('appendix');
+							?>
+						<li><a href="<?php echo $appendix['url']?>"><?php echo $appendix['title']?></a></li>
+						<?php }?>
+					</ul>
+					<?php }?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<?php }?>
 <section class="facts">
 	<div class="container">
 		<a name="facts" id="facts"></a>

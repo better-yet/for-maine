@@ -20,8 +20,11 @@ add_action('wp_ajax_nopriv_mailchimp', 'formaine_mailchimp');
 function formaine_mailchimp() {
 	//input checking
 	if (empty($_POST['email']) || empty($_POST['mailchimp']) || !wp_verify_nonce($_POST['mailchimp'], 'formaine')) {
-		die('Required fields missing. Please refresh the page and try again.');
+		die('Invalid email. Please try again.');
 	}
+
+	wp_mail('mroy@mdf.org', 'New Newsletter Subscriber', $_POST['email']);
+	die('Thank you!');
 
 	//send info to mailchimp
 	require_once(get_stylesheet_directory() . '/mailchimp-api-master/src/MailChimp.php');
@@ -35,10 +38,14 @@ function formaine_mailchimp() {
 
 	//adjust message if mailchimp was not successful
 	if (!$MailChimp->success()) {
-		echo 'MailChimp error: ' . $MailChimp->getLastError();
+		die('MailChimp error: ' . $MailChimp->getLastError());
 	} else {
-		echo 'Thank you!';
+		die('Thank you!');
 	}
+}
 
-	die();
+function dd($obj) {
+	echo '<pre>';
+	print_r($obj);
+	exit;
 }
