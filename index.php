@@ -290,7 +290,7 @@ get_header();
 		</div>
 		<div class="row">
 			<div class="col-md-6 offset-md-3 my-4 pb-2 text-center">
-				<p>FOR/Maine 2018. For more information, contact <a href="mailto:SCurran@mdf.org">SCurran@mdf.org</a></p>
+				<p>FOR/Maine 2018. For more information, contact <a href="mailto:foresteconomy@mdf.org">foresteconomy@mdf.org</a></p>
 				<p class="my-0">Site design & development by <a href="https://better-yet.com/" target="_blank">Better Yet Studio</a></p>
 			</div>
 		</div>
