@@ -11,19 +11,19 @@ get_header();
 					 xml:space="preserve">
 					<g id="Layer_1">
 						<g>
-							<polygon fill="#009444" points="234.924,77.189 225.48,80.257 239.552,57.771 235.145,26.236 211.495,4.912 179.673,3.781 
-								154.569,23.367 148.204,53.207 162.846,82.612 162.73,95.163 154.708,100.99 167.226,139.512 240.148,139.442 258.725,100.733 		
+							<polygon fill="#009444" points="234.924,77.189 225.48,80.257 239.552,57.771 235.145,26.236 211.495,4.912 179.673,3.781
+								154.569,23.367 148.204,53.207 162.846,82.612 162.73,95.163 154.708,100.99 167.226,139.512 240.148,139.442 258.725,100.733
 								"/>
-							<polygon fill="#009444" points="83.865,34.952 59.646,47.899 46.661,72.595 50.952,88.244 31.656,95.929 20.855,117.562 
-								31.035,139.49 110.634,139.512 123.042,124.713 123.201,113.451 129.117,113.152 148.915,93.124 151.203,65.057 134.918,42.083 		
+							<polygon fill="#009444" points="83.865,34.952 59.646,47.899 46.661,72.595 50.952,88.244 31.656,95.929 20.855,117.562
+								31.035,139.49 110.634,139.512 123.042,124.713 123.201,113.451 129.117,113.152 148.915,93.124 151.203,65.057 134.918,42.083
 								"/>
 							<polygon fill="#00483C" points="177.189,47.899 125.402,71.647 133.609,139.41 179.372,139.512 204.565,89.397 		"/>
 							<polygon fill="#00483C" points="3.139,100.99 15.656,139.512 56.157,139.512 68.673,100.99 35.906,26.562 		"/>
-							<polygon fill="#FFFFFF" points="135.112,119.814 135.112,104.903 74.414,104.903 74.414,62.378 65.561,62.378 65.561,104.903 
+							<polygon fill="#FFFFFF" points="135.112,119.814 135.112,104.903 74.414,104.903 74.414,62.378 65.561,62.378 65.561,104.903
 								48.257,104.866 48.257,140.626 59.646,140.626 135.112,140.626 135.112,125.821 		"/>
-							<polygon fill="#FFFFFF" points="194.772,100.733 177.536,115.421 177.536,119.814 177.542,119.814 177.542,140.626 
+							<polygon fill="#FFFFFF" points="194.772,100.733 177.536,115.421 177.536,119.814 177.542,119.814 177.542,140.626
 								212.007,140.626 212.007,125.821 212.007,115.421 		"/>
-							<polygon fill="#FFFFFF" points="173.556,125.821 173.556,104.903 156.321,90.215 139.086,104.903 139.086,125.821 
+							<polygon fill="#FFFFFF" points="173.556,125.821 173.556,104.903 156.321,90.215 139.086,104.903 139.086,125.821
 								139.086,125.821 139.086,140.626 139.086,140.626 173.556,140.626 173.563,140.626 173.563,125.821 		"/>
 							<g>
 								<path fill="#00483C" stroke="#00483C" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M264.261,93.286
@@ -96,19 +96,19 @@ get_header();
 	</div>
 </section>
 <section class="hero mt-2">
-	<video playsinline autoplay muted loop poster="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.jpg">
-		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.webm" type="video/webm">
-		<source src="<?php echo get_stylesheet_directory_uri()?>/assets/video/video-forest.mp4" type="video/mp4">
+	<video playsinline autoplay muted loop poster="<?php echo get_stylesheet_directory_uri() ?>/assets/video/video-forest.jpg">
+		<source src="<?php echo get_stylesheet_directory_uri() ?>/assets/video/video-forest.webm" type="video/webm">
+		<source src="<?php echo get_stylesheet_directory_uri() ?>/assets/video/video-forest.mp4" type="video/mp4">
 	</video>
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				<div class="inner">
 					<div class="carousel">
-						<?php 
-						while (have_rows('carousel', 'options')) {
-							the_row();
-							?>
+						<?php
+while (have_rows('carousel', 'options')) {
+    the_row();
+    ?>
 						<div class="item d-flex align-items-center">
 							<div><?php the_sub_field('headline')?></div>
 						</div>
@@ -119,6 +119,30 @@ get_header();
 		</div>
 	</div>
 </section>
+
+<section class="about">
+	<div class="container">
+		<a name="about" id="about"></a>
+		<div class="inner">
+			<div class="row">
+				<div class="col-md-8 col-lg-4">
+					<h4 class="font-weight-bold">Phase II</h4>
+					<h1>FROM FACT-FINDING TO IMPLEMENTATION</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<p>FOR/Maine is building on recent investment in the forest economy to promote continued growth through implementation of the Roadmap’s goals and strategies. Through rigorous research in Phase I, we have identified the global wood products that can be competitively made in Maine; we’ve modeled and continue to update our sustainable wood supply projections. Phase II of the project focuses on sustained collaboration for implementation of the Forest Opportunity Roadmap. We are moving forward to commercialize new uses of wood and place Maine as a global center of wood technology innovation; we are developing a marketing plan to bring more capital investments to Maine; and building a communications strategy to promote career opportunities in a resurging forest industry.</p>
+				</div>
+				<div class="col-md">
+					<p>Our success is defined by our collective ability to adapt to market opportunities and build resilient rural communities and a strong workforce, while constantly focusing on an economic development strategy that retains existing businesses, promotes innovation, encourages investment and builds market diversity. Together, we are realizing the next generation of Maine’s great forest economy.</p>
+				</div>
+			</div>
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/chart-2.svg" class="d-none d-sm-block w-100 mt-4" title="Chart">
+		</div>
+	</div>
+</section>
+
 <?php if ($report = get_field('report', 'options')) {?>
 <section class="report">
 	<div class="container">
@@ -126,23 +150,26 @@ get_header();
 			<h1 class=""><?php the_field('title', 'options')?></h1>
 			<div class="row">
 				<div class="col-sm-8 my-2">
-					<p class="lead"><?php echo nl2br(get_field('content', 'options'))?></p>
+					<p class="lead"><?php echo nl2br(get_field('content', 'options')) ?></p>
 				</div>
 				<div class="col-sm-4 my-2">
 					<h3>Download the report</h3>
 					<ul>
-						<li><a href="<?php echo $report['url']?>"><?php echo $report['title']?></a></li>
+						<li><a href="<?php echo $report['url'] ?>"><?php echo $report['title'] ?></a></li>
 					</ul>
 
 					<?php if (have_rows('appendices', 'options')) {?>
 					<h3>Appendices</h3>
 					<ul>
-						<?php while (have_rows('appendices', 'options')) {
-							the_row();
-							$appendix = get_sub_field('appendix');
-							?>
-						<li><a href="<?php echo $appendix['url']?>"><?php echo $appendix['title']?></a></li>
-						<?php }?>
+						<?php
+while (have_rows('appendices', 'options')) {
+    the_row();
+    $appendix = get_sub_field('appendix');
+    ?>
+						<li><a href="<?php echo $appendix['url'] ?>"><?php echo $appendix['title'] ?></a></li>
+						<?php
+}
+    ?>
 					</ul>
 					<?php }?>
 				</div>
@@ -237,60 +264,36 @@ get_header();
 		</div>
 	</div>
 </section>
-<section class="about">
-	<div class="container">
-		<a name="about" id="about"></a>
-		<div class="inner">
-			<h1>ABOUT FOR/MAINE</h1>
-			<div class="row">
-				<div class="col-sm">
-					<p class="lead">FOR/Maine’s purpose is to ensure that Maine adapts to market changes quickly and strategically, in order to maintain our leading role in the global forest economy.</p>
-				</div>
-				<div class="col-sm">
-					<ul>
-						<li><strong>Goal 1:</strong> Sustain and strengthen Maine’s existing forest products businesses.</li>
-						<li><strong>Goal 2:</strong> Attract capital investments and develop greater economic prosperity in the forest products sector, for both existing and new businesses across the state.</li>
-						<li><strong>Goal 3:</strong> Support the revitalization of Maine’s rural communities as places where people want to live, work and visit.</li>
-					</ul>
-				</div>
-			</div>
-			<img src="<?php echo get_stylesheet_directory_uri()?>/assets/img/chart.svg" class="d-none d-sm-block w-100 mt-4" title="Chart">
-		</div>
-	</div>
-</section>
 <section class="who">
 	<div class="container">
 		<div class="inner">
-			<h1>WHO IS FOR/MAINE?</h1>
-			<p class="lead">Forest Opportunity Roadmap / Maine (FOR/Maine) is a unique cross-sector collaboration between industry, communities, government, education, and non-profits, which have come together to realize the next generation of Maine’s great forest economy. The coalition was created with support from the U.S. Economic Development Agency and U.S. Dept. of Agriculture.</p>
+			<h1>WHAT IS FOR/MAINE?</h1>
+			<p class="lead">Forest Opportunity Roadmap / Maine (FOR/Maine) is a unique cross-sector collaboration between industry, communities, government, education, and non-profits, which have come together to ensure that Maine strategically adapts and capitalizes on changing markets, to maintain our leading role in the global forest economy and support prosperity in our state. The coalition was created with support from the U.S. Economic Development Administration and U.S. Dept. of Agriculture.</p>
 
 			<div class="row">
 				<div class="col-sm-8">
-					<h3>Steering Committee</h3>
+					<h3>EXECUTIVE COMMITTEE</h3>
 					<ul>
-						<li><strong>Patrick Strauch</strong>Maine Forest  Products Council</li>
-						<li><strong>Yellow Light Breen</strong>Maine Development Foundation</li>
-						<li><strong>Donna Cassese</strong>Sappi North America</li>
-						<li><strong>Tom Doak</strong>Maine Woodland Owners</li>
-						<li><strong>Dana Doran</strong>Professional Logging Contractors (PLC) of Maine</li>
-						<li><strong>Steve Schley</strong>Pingree Associates</li>
-						<li><strong>Charlotte Mace</strong>Biobased Maine</li>
-						<li><strong>Stephen Shaler</strong>University of Maine</li>
-						<li><strong>Jake Ward</strong>University of Maine</li>
-						<li><strong>Peggy Daigle</strong>Former Town Manager/Consultant</li>
-						<li><strong>Andy Hamilton</strong>Eaton Peabody</li>
-						<li><strong>Charlie Spies</strong>CEI Capital Management</li>
+						<?php if (have_rows('person', 'options')): ?>
+
+							<?php while (have_rows('person', 'options')): the_row();?>
+																			<li>
+																				<strong><?php the_sub_field('name');?></strong>
+																				<?php the_sub_field('title');?>
+																			</li>
+																			<?php endwhile;?>
+							<?php endif;?>
 					</ul>
 				</div>
 				<div class="col-sm-4">
 					<h3>Partners</h3>
-					<img src="<?php echo get_stylesheet_directory_uri()?>/assets/img/partners.png" class="w-100 mt-4" title="Partner Logos">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/partners-2.png" class="w-100 mt-4" title="Partner Logos">
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6 offset-md-3 my-4 pb-2 text-center">
-				<p>FOR/Maine 2018. For more information, contact <a href="mailto:foresteconomy@mdf.org">foresteconomy@mdf.org</a></p>
+				<p>FOR/Maine <?php echo current_time('Y') ?>. For more information, contact <a href="mailto:foresteconomy@mdf.org">foresteconomy@mdf.org</a></p>
 				<p class="my-0">Site design & development by <a href="https://better-yet.com/" target="_blank">Better Yet Studio</a></p>
 			</div>
 		</div>
